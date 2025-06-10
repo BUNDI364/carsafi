@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Product Shop - Carsafi Kenya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav style="background:#cc5200; padding:10px; text-align:center;">
+    <a href="index.html" style="color:white; margin:0 15px;">Home</a>
+    <a href="services.html" style="color:white; margin:0 15px;">Services</a>
+    <a href="pricing.html" style="color:white; margin:0 15px;">Pricing</a>
+    <a href="shop.html" style="color:white; margin:0 15px;">Shop</a>
+    <a href="garage.html" style="color:white; margin:0 15px;">Garage</a>
+  </nav>
+
+  <!-- Header -->
+  <header class="hero">
+    <h1>Car Product Shop</h1>
+    <p>Buy premium eco-friendly products trusted by Carsafi Kenya</p>
+  </header>
+
+  <!-- Product Grid -->
+  <section class="features">
+    <h2>Products</h2>
+    <div class="feature-list product-grid">
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150?text=Wash+Spray" alt="Wash Spray">
+        <h3>Waterless Wash Spray</h3>
+        <p>KES 1200</p>
+        <button onclick="addToCart('Waterless Wash Spray', 1200)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150?text=Dashboard+Polish" alt="Dashboard Polish">
+        <h3>Dashboard Polish</h3>
+        <p>KES 850</p>
+        <button onclick="addToCart('Dashboard Polish', 850)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150?text=Cloth+Pack" alt="Microfiber Cloth">
+        <h3>Microfiber Cloth Pack</h3>
+        <p>KES 500</p>
+        <button onclick="addToCart('Microfiber Cloth Pack', 500)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150?text=Tire+Shine" alt="Tire Shine">
+        <h3>Tire Shine Gel</h3>
+        <p>KES 950</p>
+        <button onclick="addToCart('Tire Shine Gel', 950)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Cart Display (THIS IS WHAT WAS MISSING) -->
+  <section class="features" id="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p><strong>Total: KES <span id="cart-total">0</span></strong></p>
+    <button onclick="checkoutCart()">Proceed to Checkout</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Carsafi Kenya. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
